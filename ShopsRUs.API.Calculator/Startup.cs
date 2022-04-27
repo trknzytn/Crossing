@@ -31,13 +31,8 @@ namespace ShopsRUs.CalculatorApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-
-            services.AddAutoMapper(typeof(MappingProfile));
-            //services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-
-            services.AddMemoryCache();
-
-            //services.AddScoped<ICalculator, InvoiceDiscountPercentCalculator>();
+            services.AddAutoMapper(typeof(MappingProfile));     
+            services.AddMemoryCache();         
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
