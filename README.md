@@ -6,7 +6,7 @@ Proje temel 4 katmandan oluşuyor.
 
 1. Model Katmanı: DTO modeller özelleştirilebilir db bağımsız olan modellerdir, DTO olmayanlarda entitiy framework yada db bağlantısı yapılacak ORM ler için base class lardır.
 
-2.DataAcces Katmanı: Bir veritabanı bağlantısı olmadığı için mevcut bir contex kullanılabilir değil fakat örneklerin veri modellerini üzerinde tutması için 6 dakika ömürlü memory cash kullandım. Repository Pattern ile hem db için gerken CRUD işlemler dışında extra olan işlemler için soyutlanan nesneler oluşturdum.
+2.DataAcces Katmanı: Bir veritabanı bağlantısı olmadığı için mevcut bir contex kullanılabilir değil fakat örneklerin veri modellerini üzerinde tutması için 6 dakika ömürlü memory cash kullandım. Repository Pattern ile hem db için gereken CRUD işlemler dışında extra olan işlemler için soyutlanan nesneler oluşturdum.
 
 3.Bussines Katmanı: Bu katmanda DataAccess üzerindeki verilerin alınmasından sonra işlenmesi ve hesaplamaların yapılması için yine soyut nesnelerle mümkün olduğunca bağımsız nesneler oluşturdum.
 
