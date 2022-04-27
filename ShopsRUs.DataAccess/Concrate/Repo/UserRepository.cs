@@ -22,19 +22,19 @@ namespace ShopsRUs.DataAccess.Concrate.Repo
             {
                 new User()
                 {
-                    UserName = "tests",
-                    SurUserName = "test",
+                    UserName = "tests0",
+                    SurUserName = "test0",
                     CreateDate = DateTime.Now,
                     UserCategories = new List<UserCategory>()
                     {
                         new UserCategory()
                         {
-                            UserCategoryID = 0,
+                            UserCategoryID = 2,
                             UserCategoryName = "Over2YearsUser"
                         },
                         new UserCategory()
                         {
-                            UserCategoryID = 2,
+                            UserCategoryID = 1,
                             UserCategoryName = "Affiliate"
                         }
                     },
@@ -42,11 +42,16 @@ namespace ShopsRUs.DataAccess.Concrate.Repo
                 },
                 new User()
                 {
-                    UserName = "tests",
-                    SurUserName = "test",
+                    UserName = "tests1",
+                    SurUserName = "test1",
                     CreateDate = DateTime.Now,
                     UserCategories = new List<UserCategory>()
                     {
+                        new UserCategory()
+                        {
+                            UserCategoryID = 2,
+                            UserCategoryName = "Over2YearsUser"
+                        },
                         new UserCategory()
                         {
                             UserCategoryID = 4,
@@ -57,8 +62,8 @@ namespace ShopsRUs.DataAccess.Concrate.Repo
                 },
                 new User()
                 {
-                    UserName = "tests",
-                    SurUserName = "test",
+                    UserName = "tests2",
+                    SurUserName = "test2",
                     CreateDate = DateTime.Now,
                     UserCategories = new List<UserCategory>()
                     {
@@ -72,23 +77,28 @@ namespace ShopsRUs.DataAccess.Concrate.Repo
                 },
                 new User()
                 {
-                    UserName = "tests",
-                    SurUserName = "test",
+                    UserName = "tests3",
+                    SurUserName = "test3",
                     CreateDate = DateTime.Now,
                     UserCategories = new List<UserCategory>()
                     {
                         new UserCategory()
                         {
-                            UserCategoryID = 4,
-                            UserCategoryName = "Default"
+                            UserCategoryID = 2,
+                            UserCategoryName = "Over2YearsUser"
+                        },
+                        new UserCategory()
+                        {
+                            UserCategoryID = 0,
+                            UserCategoryName = "Employee"
                         }
                     },
                     UserID = 3
                 },
                 new User()
                 {
-                    UserName = "tests",
-                    SurUserName = "test",
+                    UserName = "tests4",
+                    SurUserName = "test4",
                     CreateDate = DateTime.Now,
                     UserCategories = new List<UserCategory>()
                     {
@@ -100,6 +110,41 @@ namespace ShopsRUs.DataAccess.Concrate.Repo
                     },
                     UserID = 4
                 },
+                new User()
+                {
+                    UserName = "tests5",
+                    SurUserName = "test5",
+                    CreateDate = DateTime.Now,
+                    UserCategories = new List<UserCategory>()
+                    {
+                        new UserCategory()
+                        {
+                            UserCategoryID = 3,
+                            UserCategoryName = "Groceries"
+                        }
+                    },
+                    UserID = 5
+                },
+                new User()
+                {
+                    UserName = "tests6",
+                    SurUserName = "test6",
+                    CreateDate = DateTime.Now,
+                    UserCategories = new List<UserCategory>()
+                    {
+                        new UserCategory()
+                        {
+                            UserCategoryID = 2,
+                            UserCategoryName = "Over2YearsUser"
+                        },
+                        new UserCategory()
+                        {
+                            UserCategoryID = 3,
+                            UserCategoryName = "Groceries"
+                        }
+                    },
+                    UserID = 6
+                }
             };
 
             return users;

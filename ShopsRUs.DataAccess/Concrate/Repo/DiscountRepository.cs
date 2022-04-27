@@ -20,7 +20,7 @@ namespace ShopsRUs.DataAccess.Concrate.Repo
         {
             List<Discount> discounts = new List<Discount>()
             {
-                new Discount()
+               new Discount()
                 {
                       DiscountID = 0, DiscountType = new DiscountType(){ DiscountID = 0, DiscountTypeName="Percent" }, DiscountAmount=15, UserCategoryID = 0//Employee
                 },
@@ -32,10 +32,10 @@ namespace ShopsRUs.DataAccess.Concrate.Repo
                 {
                      DiscountID = 2, DiscountType=new DiscountType(){ DiscountID = 0, DiscountTypeName="Percent"  }, DiscountAmount=5, UserCategoryID = 2//Over2YearsUser
                 },
-                //new Discount()
-                //{
-                //     DiscountID = 3, DiscountType=null, DiscountAmount=0, UserCategoryID = 3//Groceries
-                //},
+                new Discount()
+                {
+                     DiscountID = 3, DiscountType=null, DiscountAmount=0, UserCategoryID = 3, IsBlocked = true//Groceries
+                },
                 new Discount()
                 {
                      DiscountID = 4, DiscountType=new DiscountType(){ DiscountID = 1, DiscountTypeName="PercentBaseAmount" }, AmountBasePercent= 100, DiscountAmount=5, UserCategoryID = 4//Default
